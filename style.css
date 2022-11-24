@@ -21,7 +21,7 @@ body{
 .main-container{
     display:flex;
     height:100%;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     width:80%;
     
 }
@@ -49,8 +49,8 @@ body{
     background-image: url(odin-lined.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width:17%;
-    height:85%;
+    width:5rem;
+    height:6rem;
 }
 
 .title{
@@ -69,4 +69,37 @@ body{
 
 .left-container{
     width:60%;
+}
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:white;
+}
+
+a[href=""]:link{
+    color:#596d48;
+}
+
+a[href=""]:visited{
+    color:#596d48;
+}
+
+.right-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2.5rem;
+    padding-left:2.5rem;
+}
+
+.information{
+    width:83%;
+}
+
+.information p{
+    font-size:1.2rem;
+    font-weight: bold;
 }
