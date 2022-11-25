@@ -80,10 +80,12 @@ a:visited{
 }
 
 a[href=""]:link{
+    text-decoration:none;
     color:#596d48;
 }
 
 a[href=""]:visited{
+    text-decoration: none;
     color:#596d48;
 }
 
@@ -91,7 +93,7 @@ a[href=""]:visited{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap:2.5rem;
+    gap:1.5rem;
 }
 
 .information{
@@ -146,13 +148,49 @@ form{
 }
 
 label{
+    font-weight: 500;
     font-size: 0.7rem;
     color:#343434;
 }
 
 input{
+    appearance:none;
     border:1px solid #E5E7EB;
     border-radius:4px;
     height:1.4rem;
     width:100%;
+}
+
+input:focus{
+    outline:none;
+    border:1.5px solid rgb(102, 165, 236);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.303);
+}
+
+input[type="password"]:invalid{
+    outline:none;
+    border:2px solid red;
+    box-shadow:none;
+}
+
+button{
+    font-size:0.9rem;
+    width: 25%;
+    padding:0.8rem;
+    white-space:nowrap;
+    margin-left: 2.5rem;
+    border-radius:7px;
+    border:none;
+    background-color: #596d48;
+    color:#E5E7EB;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.303);
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.log-in p{
+    font-weight: bold;
+    margin-left:2.5rem;
 }

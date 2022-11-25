@@ -38,7 +38,8 @@
                         </div>
                         <div class="label-input">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" pattern="[A-Z][a-z]*">
+                            <div class="error"></div>
                         </div>
                     </div>
                     <div class="right-form-container">
@@ -57,9 +58,9 @@
                     </div>
                 </div>
             </form>
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
             <div class="log-in">
-                <p>Already have an account?<a href="">Log in</a></p>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
