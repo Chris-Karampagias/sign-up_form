@@ -92,14 +92,67 @@ a[href=""]:visited{
     flex-direction: column;
     justify-content: center;
     gap:2.5rem;
-    padding-left:2.5rem;
 }
 
 .information{
     width:83%;
+    margin-left:2.5rem;  
 }
 
 .information p{
+    margin:0;
     font-size:1.2rem;
     font-weight: bold;
+}
+
+.information p:nth-last-child(1){
+    margin-top:2rem;
+}
+
+form{
+    background-color: white;
+    box-shadow:0px 5px 7px rgba(0, 0, 0, 0.144);
+    height:30%;
+    padding:1.5rem;
+}
+
+.left-form-container > p{
+    margin-bottom:0.5rem;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.main-form-container{
+    margin-left:2rem;
+    display:flex;
+    justify-content: flex-start;
+    gap:3.5rem;
+}
+
+.left-form-container,
+.right-form-container{
+    display:flex;
+    flex-direction: column;
+    gap:0.8rem;
+}
+
+.right-form-container{
+    align-self: flex-end;
+}
+
+.label-input{
+    display:flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 0.7rem;
+    color:#343434;
+}
+
+input{
+    border:1px solid #E5E7EB;
+    border-radius:4px;
+    height:1.4rem;
+    width:100%;
 }
