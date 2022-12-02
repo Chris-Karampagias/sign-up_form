@@ -1,1 +1,1 @@
-# sign-up_form
+This is the Sign Up Form project from TheOdinProject's Intermediate HTML & CSS curriculum. 
